@@ -24,6 +24,10 @@ MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     .then(client => {
         console.log(`Connected to ${dbName} Database`)
         db = client.db(dbName)
+        // listens to port assigned in env file or port variable 
+        app.listen(process.env.PORT || PORT, ()=>{
+        console.log(`Server running on port ${PORT}`)
+})
     })
 
 // setting the view component of mvc to render ejs
@@ -132,7 +136,7 @@ app.delete('/deleteItem', (request, response) => {
 
 })
 
-// listens to port assigned in env file or port variable 
-app.listen(process.env.PORT || PORT, ()=>{
-    console.log(`Server running on port ${PORT}`)
-})
+// // listens to port assigned in env file or port variable 
+// app.listen(process.env.PORT || PORT, ()=>{
+//     console.log(`Server running on port ${PORT}`)
+// })
