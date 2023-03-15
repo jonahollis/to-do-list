@@ -3,12 +3,12 @@
 ## About this Project
 Full stack, simple To-Do List App displaying RESTful API and styled using Bootstrap.
 
+-  [Live Link](https://ultramarine-vulture-hem.cyclic.app/)
+
 To get started, 
 
 - npm install
 - add DB_STRING to .env file
-
--  [Live Link](https://ultramarine-vulture-hem.cyclic.app/)
 
 ## Tools used
 
